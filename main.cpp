@@ -489,12 +489,12 @@ int main(int argc, char *argv[]){
         return -6;
     }
     for(int i=1;i<=argc;i++){
-        Problem heur1(argv[1],1);
-        Problem heur2(argv[1],2);
+        Problem heur1(argv[i],1);
+        Problem heur2(argv[i],2);
         heur1.solve();
-        heur1.outputToFile(argv[1]);
+        heur1.outputToFile(argv[i]);
         heur2.solve();
-        heur2.outputToFile(argv[1]);
+        heur2.outputToFile(argv[i]);
     }
     return 0;
 }
